@@ -26,6 +26,16 @@ const CreateBlog = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="" className="form-label">
+              Short Description
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Short Description"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="" className="form-label">
               Description
             </label>
             <Editor
