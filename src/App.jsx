@@ -8,6 +8,7 @@ import BlogForm from "./BlogForm";
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import BlogDetail from "./components/BlogDetail";
+import EditBlog from "./components/EditBlog";
 
 const API_URL = "http://localhost:8000";
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/" element={<Blogs />} />
         <Route path="/create" element={<CreateBlog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/blog/edit/:id" element={<EditBlog />} />
         <Route
           path="/blog-form"
           element={

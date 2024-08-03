@@ -28,7 +28,7 @@ const BlogCard = ({ blog, blogs, setBlogs }) => {
         <img src={showImage(blog.image)} className="card-img-top" />
         <div className="card-body">
           <h2 className="h5">{blog.title}</h2>
-          <p>{blog.shortDesc}</p>
+          <p>{blog.short_des}</p>
           <div className="d-flex justify-content-between">
             <a href={`/blog/${blog.id}`} className="btn btn-dark">
               Details
